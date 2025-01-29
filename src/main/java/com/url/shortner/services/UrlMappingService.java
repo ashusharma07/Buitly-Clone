@@ -50,7 +50,7 @@ public class UrlMappingService {
     }
 
     public List<UrlMappingDTO> getUrlsByUser(User user) {
-        return urlMappingRepository.findByUsername(user).stream()
+        return urlMappingRepository.findByUser(user).stream()
                 .map(this::convertToDto).toList();
     }
 }

@@ -8,5 +8,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface UrlMappingRepository extends JpaRepository<UrlMapping, Long> {
-    List<UrlMapping> findByUsername(User user);
+    List<UrlMapping> findByUser(User user);
 }
